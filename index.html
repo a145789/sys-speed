@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 14px;
+        box-sizing: border-box;
+        background-image: url(./src/assets/bg.png);
+        color: #d6e4f7;
+        cursor: move;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      #sys-info span:first-child {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="sys-info">
+        <span>CPU：</span>
+        <span id="cpu-usage"></span>
+      </div>
+      <div id="sys-info">
+        <span>内存：</span>
+        <span id="memory-usage"></span>
+      </div>
+      <div id="sys-info">
+        <span>网速：</span>
+        <span id="network-usage"></span>
+      </div>
+    </div>
+  </body>
+</html>
