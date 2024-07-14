@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/a145789/sys-speed/compare/v0.0.2...v0.0.3) (2024-7-14)
+
+
+### Features
+
+* add workflow ([08c53cb](https://github.com/a145789/sys-speed/commit/08c53cb88fc07c133ed684e332c1afe67abf60da))
+
+
+
 ## [0.0.2](https://github.com/a145789/sys-speed/compare/v0.0.1...v0.0.2) (2024-7-14)
 
 
