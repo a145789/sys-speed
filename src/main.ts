@@ -36,9 +36,12 @@ function setElement(id: string, num: number) {
   }
 }
 
+let timer: number
 async function getSystemInfo() {
+  clearTimeout(timer)
+
   const { cpuUsage, memoryUsage, networkSpeedDown, networkSpeedUp } =
-    (await invoke("get_sys_info")) as SystemInfo
+    (await invoke("plugin:system_info|get_sys_info")) as SystemInfo
 
   setElement("#cpu-usage", cpuUsage)
   setElement("#memory-usage", memoryUsage)
@@ -47,52 +50,43 @@ async function getSystemInfo() {
   document.querySelector("#network-usage")!.textContent = `↓ ${formatBytes(
     networkSpeedDown,
   )} / ↑ ${formatBytes(networkSpeedUp)}`
-}
 
-let timer: number
-function loopGetInfo() {
-  getSystemInfo()
-  timer = setInterval(getSystemInfo, 1000)
+  setTimeout(() => {
+    getSystemInfo()
+  }, 1200)
 }
 
 function hiddenWindow() {
-  console.log(222)
-
   invoke("plugin:window|hide_window")
 }
 
-window.onload = async () => {
-  console.log("load")
+async function dragWindow() {
+  await appWindow.startDragging()
+}
 
+window.onload = async () => {
   listen("tray-click", () => {
     invoke("plugin:window|show_window")
-    clearInterval(timer)
-    loopGetInfo()
+    getSystemInfo()
   })
 
   listen("screen-center", async () => {
     invoke("plugin:window|show_window")
     await appWindow.center()
-    clearInterval(timer)
-    loopGetInfo()
+    getSystemInfo()
   })
 
-  listen("hidden", () => {
-    clearInterval(timer)
+  listen("window-hidden", () => {
+    clearTimeout(timer)
   })
 
   await appWindow.setPosition(new LogicalPosition(1730, 810))
 
-  window.addEventListener("mousedown", async () => {
-    await appWindow.startDragging()
-  })
-
-  clearInterval(timer)
-  loopGetInfo()
+  getSystemInfo()
 
   // 禁用键盘事件
   document.addEventListener("keydown", (e) => e.preventDefault())
-  // 禁用滚轮和鼠标右键
+  // // 禁用滚轮和鼠标右键
   document.addEventListener("wheel", (e) => e.preventDefault())
   document.addEventListener("contextmenu", (e) => e.preventDefault())
   // 禁用选择文本
@@ -100,4 +94,9 @@ window.onload = async () => {
 
   // 监听鼠标左键双击
   document.addEventListener("dblclick", hiddenWindow)
+
+  // biome-ignore lint/style/noNonNullAssertion: <explanation>
+  document.querySelector(".container")!.addEventListener("mousedown", () => {
+    dragWindow()
+  })
 }

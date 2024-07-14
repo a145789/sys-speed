@@ -30,14 +30,16 @@ pub async fn create_window(app_handle: AppHandle, label: String, mut options: Wi
 #[command]
 pub async fn show_window(window: Window) {
     window.show().unwrap();
-    window.unminimize().unwrap();
     window.set_focus().unwrap();
+
+    window.emit("window-shown", true).unwrap();
 }
 
 // 隐藏窗口
 #[command]
 pub async fn hide_window(window: Window) {
     window.hide().unwrap();
+    window.emit("window-hidden", true).unwrap();
 }
 
 pub fn init() -> TauriPlugin<Wry> {
