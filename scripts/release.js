@@ -2,11 +2,13 @@ import fs from "node:fs"
 import { release } from "@varlet/release"
 
 async function task() {
-  const version = fs.readFileSync("package.json").toJSON().version
+  const version = JSON.parse(fs.readFileSync("package.json", "utf-8")).version
 
-  const tauriCOnfig = fs.readFileSync("src-tauri/tauri.conf.json").toJSON()
+  const tauriCOnfig = JSON.parse(
+    fs.readFileSync("src-tauri/tauri.conf.json", "utf-8"),
+  )
 
-  tauriCOnfig.version = version
+  tauriCOnfig.package.version = version
   fs.writeFileSync(
     "src-tauri/tauri.conf.json",
     JSON.stringify(tauriCOnfig, null, 2),
