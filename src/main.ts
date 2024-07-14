@@ -36,12 +36,18 @@ function setElement(id: string, num: number) {
   }
 }
 
+let lock = false
 let timer: number
 async function getSystemInfo() {
-  clearTimeout(timer)
+  if (lock) {
+    return
+  }
 
+  lock = true
   const { cpuUsage, memoryUsage, networkSpeedDown, networkSpeedUp } =
     (await invoke("plugin:system_info|get_sys_info")) as SystemInfo
+
+  lock = false
 
   setElement("#cpu-usage", cpuUsage)
   setElement("#memory-usage", memoryUsage)
@@ -51,7 +57,8 @@ async function getSystemInfo() {
     networkSpeedDown,
   )} / ↑ ${formatBytes(networkSpeedUp)}`
 
-  setTimeout(() => {
+  clearTimeout(timer)
+  timer = setTimeout(() => {
     getSystemInfo()
   }, 1200)
 }
