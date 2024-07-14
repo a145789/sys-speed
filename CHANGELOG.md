@@ -1,3 +1,7 @@
+## [0.0.5](https://github.com/a145789/sys-speed/compare/v0.0.4...v0.0.5) (2024-7-14)
+
+
+
 ## [0.0.4](https://github.com/a145789/sys-speed/compare/v0.0.3...v0.0.4) (2024-7-14)
 
 
