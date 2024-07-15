@@ -34,6 +34,17 @@ impl Default for SysInfoState {
     }
 }
 
+fn get_wlan_data(networks: &Networks) -> (u64, u64) {
+    for (interface_name, data) in networks {
+        if interface_name == "WLAN" {
+            return (data.received(), data.transmitted());
+        }
+    }
+    println!("WLAN interface not found");
+    // If WLAN interface is not found, return 0 for both received and transmitted data.
+    (0, 0)
+}
+
 #[command]
 pub fn get_sys_info(state: tauri::State<'_, SysInfoState>) -> SystemInfo {
     // 锁定 sysinfo 并将其绑定到一个变量上
@@ -57,16 +68,8 @@ pub fn get_sys_info(state: tauri::State<'_, SysInfoState>) -> SystemInfo {
 
     let mut networks = Networks::new_with_refreshed_list();
     networks.refresh_list();
-    let network_speed_up = networks
-        .iter()
-        .map(|(_, data)| data.transmitted())
-        .sum::<u64>()
-        / networks.len() as u64;
-    let network_speed_down = networks
-        .iter()
-        .map(|(_, data)| data.received())
-        .sum::<u64>()
-        / networks.len() as u64;
+
+    let (network_speed_down, network_speed_up) = get_wlan_data(&networks);
 
     SystemInfo {
         memory_usage,

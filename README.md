@@ -7,3 +7,7 @@
 - 随意拖动
 
 ![image](https://github.com/user-attachments/assets/6dc3ba51-7771-4fa8-a3c5-4c483ea56d84)
+
+## 参考
+
+[EcoPaste](https://github.com/ayangweb/EcoPaste)
