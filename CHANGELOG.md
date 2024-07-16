@@ -1,5 +1,12 @@
+## <small>0.0.9 (2024-07-16)</small>
+
+* fix: ci error ([334e68e](https://github.com/a145789/sys-speed/commit/334e68e))
+
+
+
 ## <small>0.0.8 (2024-07-16)</small>
 
+* v0.0.8 ([a81692a](https://github.com/a145789/sys-speed/commit/a81692a))
 * fix: ts error ([9727abc](https://github.com/a145789/sys-speed/commit/9727abc))
 
 
