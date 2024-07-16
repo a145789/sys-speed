@@ -1,5 +1,12 @@
+## <small>0.0.11 (2024-07-16)</small>
+
+* chore: ci ([a2bc058](https://github.com/a145789/sys-speed/commit/a2bc058))
+
+
+
 ## <small>0.0.10 (2024-07-16)</small>
 
+* v0.0.10 ([7ea7159](https://github.com/a145789/sys-speed/commit/7ea7159))
 * fix: 无依赖错误 ([87257e4](https://github.com/a145789/sys-speed/commit/87257e4))
 
 
