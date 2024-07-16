@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "lint": "biome check --write src",
-    "release": "bun run ./scripts/release.ts"
+    "release": "bun run ./scripts/release.ts",
+    "updater": "node scripts/update.js"
   },
   "dependencies": {
     "@tauri-apps/api": "^1"

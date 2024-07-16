@@ -112,7 +112,7 @@ jobs:
         with:
           version: 8
       - uses: actions/checkout@v2
-      - run: pnpm i
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm updater
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
