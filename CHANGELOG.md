@@ -1,5 +1,12 @@
+## <small>0.0.8 (2024-07-16)</small>
+
+* fix: ts error ([9727abc](https://github.com/a145789/sys-speed/commit/9727abc))
+
+
+
 ## <small>0.0.7 (2024-07-16)</small>
 
+* v0.0.7 ([72e489d](https://github.com/a145789/sys-speed/commit/72e489d))
 * feat: 增加更新通知 ([6d47087](https://github.com/a145789/sys-speed/commit/6d47087))
 * fix: refactor network speed retrieval ([d6bacca](https://github.com/a145789/sys-speed/commit/d6bacca))
 
