@@ -1,5 +1,12 @@
+## <small>0.0.12 (2024-07-16)</small>
+
+* fix: 更新日志错误 ([41978cc](https://github.com/a145789/sys-speed/commit/41978cc))
+
+
+
 ## <small>0.0.11 (2024-07-16)</small>
 
+* v0.0.11 ([5011c55](https://github.com/a145789/sys-speed/commit/5011c55))
 * chore: ci ([a2bc058](https://github.com/a145789/sys-speed/commit/a2bc058))
 
 
