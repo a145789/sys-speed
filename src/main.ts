@@ -37,7 +37,7 @@ function setElement(id: string, num: number) {
 }
 
 let lock = false
-let timer: number
+let timer: any
 async function getSystemInfo() {
   if (lock) {
     return
