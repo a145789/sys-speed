@@ -1,44 +1,58 @@
-## [0.0.6](https://github.com/a145789/sys-speed/compare/v0.0.5...v0.0.6) (2024-7-14)
+## <small>0.0.7 (2024-07-16)</small>
+
+* feat: 增加更新通知 ([6d47087](https://github.com/a145789/sys-speed/commit/6d47087))
+* fix: refactor network speed retrieval ([d6bacca](https://github.com/a145789/sys-speed/commit/d6bacca))
 
 
 
-## [0.0.5](https://github.com/a145789/sys-speed/compare/v0.0.4...v0.0.5) (2024-7-14)
+## <small>0.0.6 (2024-07-14)</small>
+
+* v0.0.6 ([2173890](https://github.com/a145789/sys-speed/commit/2173890))
+* chore: refactor system info retrieval with locking mechanism ([f1b7930](https://github.com/a145789/sys-speed/commit/f1b7930))
 
 
 
-## [0.0.4](https://github.com/a145789/sys-speed/compare/v0.0.3...v0.0.4) (2024-7-14)
+## <small>0.0.5 (2024-07-14)</small>
+
+* v0.0.5 ([45bc8a1](https://github.com/a145789/sys-speed/commit/45bc8a1))
+* chore: update workflow for package management ([9ff406e](https://github.com/a145789/sys-speed/commit/9ff406e))
 
 
 
-## [0.0.3](https://github.com/a145789/sys-speed/compare/v0.0.2...v0.0.3) (2024-7-14)
+## <small>0.0.4 (2024-07-14)</small>
 
-
-### Features
-
-* add workflow ([08c53cb](https://github.com/a145789/sys-speed/commit/08c53cb88fc07c133ed684e332c1afe67abf60da))
-
-
-
-## [0.0.2](https://github.com/a145789/sys-speed/compare/v0.0.1...v0.0.2) (2024-7-14)
-
-
-### Reverts
-
-* Revert "v0.0.1" ([ed5350c](https://github.com/a145789/sys-speed/commit/ed5350c7f365f6b20493c711677018390ab66062))
+* v0.0.4 ([cb9f509](https://github.com/a145789/sys-speed/commit/cb9f509))
+* chore: update workflow ([07d7024](https://github.com/a145789/sys-speed/commit/07d7024))
 
 
 
-## [0.0.1](https://github.com/a145789/sys-speed/compare/edd7a7fbe4e0d99991ad36f977482c01d4a4927f...v0.0.1) (2024-7-14)
+## <small>0.0.3 (2024-07-14)</small>
+
+* v0.0.3 ([7e377c8](https://github.com/a145789/sys-speed/commit/7e377c8))
+* feat: add workflow ([08c53cb](https://github.com/a145789/sys-speed/commit/08c53cb))
 
 
-### Bug Fixes
 
-* **app:** remove unused cursor property ([9a8f4cf](https://github.com/a145789/sys-speed/commit/9a8f4cfbfedd41d2d92d1c2ded1990ccffd06899))
+## <small>0.0.2 (2024-07-14)</small>
+
+* Revert "v0.0.1" ([ed5350c](https://github.com/a145789/sys-speed/commit/ed5350c))
+* v0.0.1 ([9c6088a](https://github.com/a145789/sys-speed/commit/9c6088a))
+* v0.0.2 ([f6aea4d](https://github.com/a145789/sys-speed/commit/f6aea4d))
+* chore: release ([39fbd3e](https://github.com/a145789/sys-speed/commit/39fbd3e))
 
 
-### Performance Improvements
 
-* **app:** optimize CPU and memory usage ([edd7a7f](https://github.com/a145789/sys-speed/commit/edd7a7fbe4e0d99991ad36f977482c01d4a4927f))
+## <small>0.0.1 (2024-07-14)</small>
+
+* doc ([0a1deeb](https://github.com/a145789/sys-speed/commit/0a1deeb))
+* init ([77cee76](https://github.com/a145789/sys-speed/commit/77cee76))
+* update icon ([b73819a](https://github.com/a145789/sys-speed/commit/b73819a))
+* Update README.md ([21797d6](https://github.com/a145789/sys-speed/commit/21797d6))
+* v0.0.1 ([31d83fe](https://github.com/a145789/sys-speed/commit/31d83fe))
+* chore: add release ([b5442ce](https://github.com/a145789/sys-speed/commit/b5442ce))
+* chore: release ([5bc2758](https://github.com/a145789/sys-speed/commit/5bc2758))
+* fix(app): remove unused cursor property ([9a8f4cf](https://github.com/a145789/sys-speed/commit/9a8f4cf))
+* perf(app): optimize CPU and memory usage ([edd7a7f](https://github.com/a145789/sys-speed/commit/edd7a7f))
 
 
 
