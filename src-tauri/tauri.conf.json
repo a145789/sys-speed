@@ -56,6 +56,13 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ]
-    }
+    },
+    "updater": {
+			"active": true,
+			"endpoints": [
+				"https://a145789.github.io/sys-speed/install.json"
+			],
+			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDExMUUzNjhEMDdCRkIzNEIKUldSTHM3OEhqVFllRWVJdEZOQzBJM2tLZjBNVXlKMmV5SXRJVTNTaTZpMjZ4Y21yUGpyeE5FUkEK"
+		}
   }
 }

@@ -18,15 +18,18 @@ importers:
       '@tauri-apps/cli':
         specifier: ^1
         version: 1.6.0
+      '@types/bun':
+        specifier: ^1.1.6
+        version: 1.1.6
       '@varlet/release':
-        specifier: ^0.2.10
-        version: 0.2.10
+        specifier: ^0.2.11
+        version: 0.2.11
       typescript:
         specifier: ^5.2.2
         version: 5.5.3
       vite:
         specifier: ^5.3.1
-        version: 5.3.3
+        version: 5.3.3(@types/node@20.12.14)
 
 packages:
 
@@ -398,14 +401,23 @@ packages:
     engines: {node: '>= 10'}
     hasBin: true
 
+  '@types/bun@1.1.6':
+    resolution: {integrity: sha512-uJgKjTdX0GkWEHZzQzFsJkWp5+43ZS7HC8sZPFnOwnSo1AsNl2q9o2bFeS23disNDqbggEgyFkKCHl/w8iZsMA==}
+
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/node@20.12.14':
+    resolution: {integrity: sha512-scnD59RpYD91xngrQQLGkE+6UrHUPzeKZWhhjBSa3HSkwjbQc38+q3RoIVEwxQGRw3M+j5hpNAM+lgV3cVormg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@varlet/release@0.2.10':
-    resolution: {integrity: sha512-j0TR0BEjpI6ExTGJclNzYsQ/+QO/yd5obwsWdMuE2qQxid1dI15PZt7ZIWaP3Xhe5AAVAs7mYUD29v7AemMBLA==}
+  '@types/ws@8.5.11':
+    resolution: {integrity: sha512-4+q7P5h3SpJxaBft0Dzpbr6lmMaqh0Jr2tbhJZ/luAwvD7ohSCniYkwz/pLxuT2h0EOa6QADgJj1Ko+TzRfZ+w==}
+
+  '@varlet/release@0.2.11':
+    resolution: {integrity: sha512-mXvQIXJhjN8RX2OSCN+V1UUJXEK/8cMFTgiggSvBQBFSmt1dFmqcoeBKQdAZf4nuwdQjuVFUDCy+fxzXVHSzLA==}
     engines: {node: '>=16.0.0', pnpm: '>=8.0'}
     hasBin: true
 
@@ -457,6 +469,9 @@ packages:
 
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+
+  bun-types@1.1.17:
+    resolution: {integrity: sha512-Z4+OplcSd/YZq7ZsrfD00DKJeCwuNY96a1IDJyR73+cTBaFIS7SC6LhpY/W3AMEXO9iYq5NJ58WAwnwL1p5vKg==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -997,6 +1012,9 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
+  undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -1295,11 +1313,23 @@ snapshots:
       '@tauri-apps/cli-win32-ia32-msvc': 1.6.0
       '@tauri-apps/cli-win32-x64-msvc': 1.6.0
 
+  '@types/bun@1.1.6':
+    dependencies:
+      bun-types: 1.1.17
+
   '@types/estree@1.0.5': {}
+
+  '@types/node@20.12.14':
+    dependencies:
+      undici-types: 5.26.5
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@varlet/release@0.2.10':
+  '@types/ws@8.5.11':
+    dependencies:
+      '@types/node': 20.12.14
+
+  '@varlet/release@0.2.11':
     dependencies:
       commander: 11.1.0
       conventional-changelog: 5.1.0
@@ -1356,6 +1386,11 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
+
+  bun-types@1.1.17:
+    dependencies:
+      '@types/node': 20.12.14
+      '@types/ws': 8.5.11
 
   chalk@2.4.2:
     dependencies:
@@ -1916,6 +1951,8 @@ snapshots:
   uglify-js@3.18.0:
     optional: true
 
+  undici-types@5.26.5: {}
+
   universalify@2.0.1: {}
 
   util-deprecate@1.0.2: {}
@@ -1925,12 +1962,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@5.3.3:
+  vite@5.3.3(@types/node@20.12.14):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
       rollup: 4.18.1
     optionalDependencies:
+      '@types/node': 20.12.14
       fsevents: 2.3.3
 
   wcwidth@1.0.1:
