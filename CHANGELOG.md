@@ -1,5 +1,12 @@
+## <small>0.0.10 (2024-07-16)</small>
+
+* fix: 无依赖错误 ([87257e4](https://github.com/a145789/sys-speed/commit/87257e4))
+
+
+
 ## <small>0.0.9 (2024-07-16)</small>
 
+* v0.0.9 ([bf36646](https://github.com/a145789/sys-speed/commit/bf36646))
 * fix: ci error ([334e68e](https://github.com/a145789/sys-speed/commit/334e68e))
 
 
