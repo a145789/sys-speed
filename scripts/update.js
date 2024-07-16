@@ -2,8 +2,6 @@ import fs from "node:fs";
 import { context, getOctokit } from "@actions/github";
 import fetch from "node-fetch";
 
-import updatelog from "./updatelog.mjs";
-
 const token = process.env.GITHUB_TOKEN;
 
 async function updater() {
@@ -39,7 +37,7 @@ async function updater() {
   const updateData = {
     version: tag.name,
     // 使用 UPDATE_LOG.md，如果不需要版本更新日志，则将此字段置空
-    notes: updatelog(tag.name),
+    notes: "",
     pub_date: new Date().toISOString(),
     platforms: {
       win64: { signature: "", url: "" }, // compatible with older formats
