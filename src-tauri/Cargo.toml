@@ -27,7 +27,7 @@ git-fetch-with-cli = true
 tauri-build = { version = "1", features = [] }
 
 [dependencies]
-tauri = { version = "1", features = [ "window-center", "window-set-position", "window-start-dragging", "system-tray", "shell-open"] }
+tauri = { version = "1", features = [ "updater", "window-center", "window-set-position", "window-start-dragging", "system-tray", "shell-open"] }
 serde = { version = "1", features = ["derive"] }
 tauri-plugin-single-instance = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }
 tauri-plugin-autostart = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }

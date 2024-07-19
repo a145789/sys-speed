@@ -55,7 +55,7 @@ async function getSystemInfo() {
   // biome-ignore lint/style/noNonNullAssertion: <explanation>
   document.querySelector("#network-usage")!.textContent = `↓ ${formatBytes(
     networkSpeedDown,
-  )} / ↑ ${formatBytes(networkSpeedUp)}`
+  )} | ↑ ${formatBytes(networkSpeedUp)}`
 
   clearTimeout(timer)
   timer = setTimeout(() => {
