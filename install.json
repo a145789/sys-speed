@@ -1,0 +1,35 @@
+{
+  "version": "v0.0.13",
+  "notes": "",
+  "pub_date": "2024-07-19T03:54:00.881Z",
+  "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVUxYTdhTHBvVE9XeGZRRUNJWHQycUlkRGt4aUNOenhPdU12Uk9IRDBJMWFmYkg4V2lNYWQwU2pmSEVYQzBoVEFzTHU1S2o4bHRPSGxtQWxWVVpTSndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYxMjExCWZpbGU6c3lzLXNwZWVkXzAuMC4xM194NjRfZW4tVVMubXNpLnppcApvRG82VkNJQ0MzSDg0TU5yd29pdWVqY0F5eHVSZnd4MEpsNVpOWHhvL0swWFhEY0lCOTd5Y1lFU3hUaGdQTXMxZGRNbzNuaHpuRklhNWI1bmtBMEdBUT09Cg==",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed_0.0.13_x64_en-US.msi.zip"
+    },
+    "linux": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVJZeTJCMWRVR1FDSFMrNlNIOWJzcXN4Q0NXaytoS2ppbjZrb3FoSkRjd1l5K3QxbmNQbjg4U2pPVjdWOWFNbnVYcllPS0dKU0RER0xia0Q2Ym1LdkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYxMTAyCWZpbGU6c3lzLXNwZWVkXzAuMC4xM19hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKYXdmdEJUSHRuK2cvQ1Ewd3Y0ZFdYMSszRm1sN1RESWpGeFlSa3R5WjdQZG04Q3FPSk9ROHE2ZHZRVEJkUUdmS0EwbXFEYXltb2VnMGpxL1Q1N1BmQlE9PQo=",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed_0.0.13_amd64.AppImage.tar.gz"
+    },
+    "darwin": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVJ5YlNNNytvcHgydmp6TzJPRVphVU9ZaHVIN2N3TGtpS004cWNBR0F5S00vR1QwdEwvZUhkMmRzcC95d2lVSUZFVGpPMWpTRVNQKzlnVEZOMjkvZndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYwOTA5CWZpbGU6c3lzLXNwZWVkLmFwcC50YXIuZ3oKcWdYWU5wM0hOVkYwU2JodjFCL1F1T2NWcTdWK3N0MmJxd3RGK3BOR2xiczRFUGtVWmJoRWhldjh5b2psVnhNby9yUkVXTUNSbytmb0ZmbWN2b2dCRGc9PQo=",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVJ5YlNNNytvcHgydmp6TzJPRVphVU9ZaHVIN2N3TGtpS004cWNBR0F5S00vR1QwdEwvZUhkMmRzcC95d2lVSUZFVGpPMWpTRVNQKzlnVEZOMjkvZndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYwOTA5CWZpbGU6c3lzLXNwZWVkLmFwcC50YXIuZ3oKcWdYWU5wM0hOVkYwU2JodjFCL1F1T2NWcTdWK3N0MmJxd3RGK3BOR2xiczRFUGtVWmJoRWhldjh5b2psVnhNby9yUkVXTUNSbytmb0ZmbWN2b2dCRGc9PQo=",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVJ5YlNNNytvcHgydmp6TzJPRVphVU9ZaHVIN2N3TGtpS004cWNBR0F5S00vR1QwdEwvZUhkMmRzcC95d2lVSUZFVGpPMWpTRVNQKzlnVEZOMjkvZndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYwOTA5CWZpbGU6c3lzLXNwZWVkLmFwcC50YXIuZ3oKcWdYWU5wM0hOVkYwU2JodjFCL1F1T2NWcTdWK3N0MmJxd3RGK3BOR2xiczRFUGtVWmJoRWhldjh5b2psVnhNby9yUkVXTUNSbytmb0ZmbWN2b2dCRGc9PQo=",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVJZeTJCMWRVR1FDSFMrNlNIOWJzcXN4Q0NXaytoS2ppbjZrb3FoSkRjd1l5K3QxbmNQbjg4U2pPVjdWOWFNbnVYcllPS0dKU0RER0xia0Q2Ym1LdkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYxMTAyCWZpbGU6c3lzLXNwZWVkXzAuMC4xM19hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKYXdmdEJUSHRuK2cvQ1Ewd3Y0ZFdYMSszRm1sN1RESWpGeFlSa3R5WjdQZG04Q3FPSk9ROHE2ZHZRVEJkUUdmS0EwbXFEYXltb2VnMGpxL1Q1N1BmQlE9PQo=",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed_0.0.13_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTHM3OEhqVFllRVUxYTdhTHBvVE9XeGZRRUNJWHQycUlkRGt4aUNOenhPdU12Uk9IRDBJMWFmYkg4V2lNYWQwU2pmSEVYQzBoVEFzTHU1S2o4bHRPSGxtQWxWVVpTSndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzIxMzYxMjExCWZpbGU6c3lzLXNwZWVkXzAuMC4xM194NjRfZW4tVVMubXNpLnppcApvRG82VkNJQ0MzSDg0TU5yd29pdWVqY0F5eHVSZnd4MEpsNVpOWHhvL0swWFhEY0lCOTd5Y1lFU3hUaGdQTXMxZGRNbzNuaHpuRklhNWI1bmtBMEdBUT09Cg==",
+      "url": "https://github.com/a145789/sys-speed/releases/download/v0.0.13/sys-speed_0.0.13_x64_en-US.msi.zip"
+    }
+  }
+}
