@@ -1,5 +1,12 @@
+## <small>0.0.13 (2024-07-19)</small>
+
+* feat: 添加系统托盘菜单版本显示功能；修改窗口尺寸和配置。 ([41d6572](https://github.com/a145789/sys-speed/commit/41d6572))
+
+
+
 ## <small>0.0.12 (2024-07-16)</small>
 
+* v0.0.12 ([b310581](https://github.com/a145789/sys-speed/commit/b310581))
 * fix: 更新日志错误 ([41978cc](https://github.com/a145789/sys-speed/commit/41978cc))
 
 
